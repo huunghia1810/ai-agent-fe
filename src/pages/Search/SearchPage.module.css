@@ -1,0 +1,32 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    padding: 20px;
+    padding-top: 60px;
+}
+
+.searchContainer {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+
+.textarea {
+    font-size: 16px;
+}
+
+.searchButton {
+    margin-top: 8px;
+}
+

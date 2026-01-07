@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.brand {
+    color: #fff;
+    font-weight: 600;
+    margin-right: 32px;
+    user-select: none;
+}
+
+.menu {
+    flex: 1;
+}
