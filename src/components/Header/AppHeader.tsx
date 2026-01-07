@@ -1,5 +1,6 @@
 import { Layout, Menu } from 'antd'
 import { useLocation, useNavigate } from 'react-router-dom'
+import { usePageTitle } from '../../contexts/PageTitleContext'
 import styles from './AppHeader.module.css'
 
 const { Header } = Layout
@@ -7,6 +8,7 @@ const { Header } = Layout
 export default function AppHeader() {
     const location = useLocation()
     const navigate = useNavigate()
+    const { title } = usePageTitle()
 
     const selectedKey =
         location.pathname === '/home' ? '/home' :
@@ -15,7 +17,7 @@ export default function AppHeader() {
 
     return (
         <Header className={styles.header}>
-            <div className={styles.brand}>AI Query UI</div>
+            <div className={styles.brand}>{title}</div>
 
             <Menu
                 theme="dark"
